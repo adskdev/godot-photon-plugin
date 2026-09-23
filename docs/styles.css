@@ -1,0 +1,145 @@
+:root {
+  --theme-color: #58a6ff; 
+  --bg-color: #0d1117;
+  --surface-color: #161b22;
+  --surface-hover: #1f242c;
+  --border-color: #30363d;
+  --text-color: #c9d1d9;
+  --inline-code-color: #ff7b72;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.markdown-section {
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.markdown-section hr {
+  border: none !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent 0%, var(--theme-color) 50%, transparent 100%) !important;
+  margin: 3.5em 0 !important;
+  opacity: 0.7;
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.4);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.markdown-section hr:hover {
+  opacity: 1;
+  transform: scaleX(1.05);
+}
+
+.markdown-section table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100%;
+  display: table;
+  table-layout: auto;
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.markdown-section table th {
+  background-color: var(--surface-color) !important;
+  color: var(--theme-color) !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 14px 16px !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.markdown-section table td {
+  border-bottom: 1px solid #1a1f26 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  padding: 12px 16px !important;
+  color: var(--text-color) !important;
+}
+
+.markdown-section table tr {
+  background-color: var(--bg-color) !important;
+  transition: background-color 0.2s ease;
+}
+
+.markdown-section table tr:nth-child(2n) {
+  background-color: rgba(22, 27, 34, 0.5) !important;
+}
+
+.markdown-section table tr:hover {
+  background-color: var(--surface-hover) !important;
+}
+
+.markdown-section code:not([class*="language-"]) {
+  background: var(--surface-hover) !important;
+  color: var(--inline-code-color) !important;
+  padding: 4px 6px !important;
+  border-radius: 6px;
+  font-size: 0.85em;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.markdown-section a {
+  color: var(--theme-color);
+  text-decoration: none;
+  transition: text-shadow 0.2s ease, color 0.2s ease;
+}
+
+.markdown-section a:hover {
+  text-shadow: 0 0 8px rgba(88, 166, 255, 0.6);
+  text-decoration: none !important;
+}
+
+.markdown-section blockquote {
+  border-left: 4px solid var(--theme-color) !important;
+  background: linear-gradient(90deg, rgba(22, 27, 34, 0.8) 0%, transparent 100%) !important;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 20px !important;
+  margin: 2em 0;
+  color: #8b949e !important;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-color); }
+::-webkit-scrollbar-thumb { 
+    background: var(--border-color); 
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover { background: var(--theme-color); }
+
+@media screen and (max-width: 768px) {
+  .markdown-section table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  .markdown-section table th {
+    padding: 10px 12px !important;
+  }
+  
+  .markdown-section table td {
+    padding: 8px 12px !important;
+  }
+  
+  .markdown-section table code:not([class*="language-"]) {
+    font-size: 0.8em;
+  }
+}

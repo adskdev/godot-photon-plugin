@@ -48,7 +48,7 @@ cmake --build . --config Release
 ```
 
 ## Documentation
-The documentation is hosted on [Read the Docs](https://adskdev.github.io/godot-photon-plugin).
+The documentation is hosted on [GitHub Pages](https://adskdev.github.io/godot-photon-plugin).
 
 ![Windows](https://custom-icon-badges.demolab.com/badge/Windows-111111?logo=windows&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)

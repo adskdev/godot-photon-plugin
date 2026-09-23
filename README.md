@@ -30,7 +30,7 @@ Download the archive from the [latest GitHub release](https://github.com/adskoe9
 
 1. Clone repo with submodule:
 ```bash
-   git clone https://github.com/adskoe96/godot-photon-plugin
+   git clone https://github.com/adskdev/godot-photon-plugin
    cd godot-photon-plugin
    git clone -b 4.3 https://github.com/godotengine/godot-cpp.git
 ```
@@ -48,7 +48,7 @@ cmake --build . --config Release
 ```
 
 ## Documentation
-The documentation is hosted on [Read the Docs](https://godot-photon-plugin.readthedocs.io/).
+The documentation is hosted on [Read the Docs](https://adskdev.github.io/godot-photon-plugin).
 
 ![Windows](https://custom-icon-badges.demolab.com/badge/Windows-111111?logo=windows&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)

@@ -192,4 +192,4 @@ When calling `photon_rpc`, the third argument determines who receives the messag
 * `PhotonView.RPC_OTHERS_BUFFERED` (4) — Other players + players who join later.
 
 # Bye!!!
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2F2MnZpbzcwdXlrczBsc2p3MGZzYTN6bm5nYXJvZXl0NzZrbjZmaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jVthNBwmRX50ceBGJd/giphy.gif" alt="markdown language" width="200" height="200">
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2F2MnZpbzcwdXlrczBsc2p3MGZzYTN6bm5nYXJvZXl0NzZrbjZmaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jVthNBwmRX50ceBGJd/giphy.gif" alt="ᗜˬᗜ" width="200" height="200">
